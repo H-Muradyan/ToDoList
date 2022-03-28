@@ -1,0 +1,58 @@
+.generelHome{
+    .title{
+        margin-top: 229px;
+        color: #174348;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: capitalize;
+        margin-bottom: unset;
+    }
+    .inputForm{
+        display: flex;
+        .errorMessage{
+            display: flex;
+            flex-direction: column;
+            p{
+                color: red;
+            }
+        }
+        .textField{
+            width: 954px;
+            height: 52px;
+            border: 1px solid #FFCD04;
+            border-radius: 4px;
+            padding-left: 15px;
+        }
+       
+        ::placeholder{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: capitalize;
+            color: #DFDFDF;
+        }
+        input:focus::placeholder{
+            color: transparent;
+        }
+        .buttonFeild{
+            margin-left: 25px;
+            width: 100px;
+            height: 52px;
+            background: #008594;
+            border-radius: 4px;
+            border-style: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+}

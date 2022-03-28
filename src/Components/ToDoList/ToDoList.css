@@ -1,0 +1,98 @@
+.texts {
+  margin-top: 140px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.texts .text1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  color: #ACACAC;
+  margin-bottom: unset;
+}
+
+.texts .text2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 0.002em;
+  text-transform: capitalize;
+  color: #666666;
+}
+
+.listData {
+  margin-top: 82px;
+}
+
+.listData .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.listData .lists .ant-checkbox-inner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #008594;
+}
+
+.listData .lists .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #008594;
+}
+
+.listData .lists .task {
+  width: 100%;
+  margin-top: unset;
+  margin-left: 35px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #666666;
+}
+
+.listData .lists .completedTask {
+  width: 100%;
+  margin-top: unset;
+  margin-left: 35px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #ACACAC;
+}
+
+.listData .lists .delete {
+  margin-right: 15.41px;
+  text-align: end;
+}
+
+.listData .line {
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+  border: 1px solid #E5E5E5;
+}
+/*# sourceMappingURL=ToDoList.css.map */
