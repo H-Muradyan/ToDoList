@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import "antd/dist/antd.css";
 import './ToDoForm.css'
-import { Input } from 'antd';
+import { Input, Checkbox } from 'antd';
 
 
 
 
-function ToDoForm({addTask}) {
+function ToDoForm({addTask, hideChange}) {
     let [taskText, setTaskText] = useState('');
   
     const handleChange = (e) => {
@@ -24,6 +24,10 @@ function ToDoForm({addTask}) {
 
   return (
     <div className='generelHome'>
+        <div className='hide'>
+            <Checkbox onChange={() => hideChange()} className='hideBox'></Checkbox>
+            <p className='hideText'>Hide completed</p>
+        </div>
         <p className='title'>Task</p>
         <form className='inputForm' onSubmit={handleSubmit}>
             {taskText.trim().length === 0

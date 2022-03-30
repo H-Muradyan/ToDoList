@@ -1,5 +1,33 @@
+.generelHome .hide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 146px;
+}
+
+.generelHome .hide .ant-checkbox-inner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #008594;
+}
+
+.generelHome .hide .hideText {
+  margin-left: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
 .generelHome .title {
-  margin-top: 229px;
+  margin-top: 56px;
   color: #174348;
   font-family: 'Poppins';
   font-style: normal;

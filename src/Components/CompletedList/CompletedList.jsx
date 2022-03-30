@@ -1,6 +1,5 @@
 import React from 'react'
 import "antd/dist/antd.css";
-import './ToDoList.css'
 import { Checkbox } from 'antd';
 
 const photo = require('../../Icon/Vector.png');
@@ -12,20 +11,19 @@ function ToDoList({toDoDatas, handleDelete, onChange}) {
     <div className='listData'>
         {toDoDatas.length > 0
             ? toDoDatas.map((data) => {
+                
                 return (
+                    !data.isCompleted &&
                     <>
                         <div className='lists' key={data.id}>   
-                            <Checkbox checked={data.isCompleted} className='box' onChange={() => onChange({
+                            <Checkbox  lassName='box' onChange={() => onChange({
                                 ...data,
                                 isCompleted: !data.isCompleted
                             })}>
                             </Checkbox>
-                            {!data.isCompleted &&
+                           
                             <div className='task'>{data.text}</div>
-                            }
-                            {data.isCompleted &&
-                            <div className='completedTask'>{data.text}</div>
-                            }
+                            
                             <img className='delete' src={photo} alt='delete-icon' onClick={() => handleDelete(data.id)}/>
                         </div>
                         <div className='line'></div>

@@ -1,6 +1,27 @@
 .generelHome{
+    .hide{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-top: 146px;
+        .ant-checkbox-inner{
+            width: 18px;
+            height: 18px;
+            border: 2px solid #008594;
+        }
+        .hideText{
+            margin-left: 15px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: capitalize;
+            color: #000000;
+        }
+    }
     .title{
-        margin-top: 229px;
+        margin-top: 56px;
         color: #174348;
         font-family: 'Poppins';
         font-style: normal;
