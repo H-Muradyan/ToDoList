@@ -89,6 +89,9 @@ function App() {
             toDoDatas={toDoDatas}
             handleDelete={handleDelete}
             onChange={onChange}
+            showModal={showModal}
+            handleCancel={handleCancel}
+            isModalVisible={isModalVisible}
           />
       }
      
