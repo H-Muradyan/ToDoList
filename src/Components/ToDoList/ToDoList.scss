@@ -66,6 +66,7 @@
         .delete{
             margin-right: 15.41px;
             text-align: end;
+            cursor: pointer;
         }
     }
     .line{
@@ -73,4 +74,112 @@
         width: 100%;
         border: 1px solid #E5E5E5;
     }
+ 
 }
+.ant-modal-close{
+    display: none;
+}
+.modalBlock{
+    .question{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        text-transform: capitalize;
+        color: #008594;
+        text-align: center;
+        margin-top: 28px;
+        margin-bottom: unset;
+    }
+    .buttonsBlock{
+        margin-top: 40px;
+        margin-bottom: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .yesButton{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: #174348;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+        .noButton{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: #174348;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 414px){
+    .listData{
+        .lists{
+            .task{
+                font-size: 16px;
+                line-height: 27px;
+            }
+        }
+        .texts{
+            .text1{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.2px;
+                text-transform: capitalize;
+                color: #ACACAC;
+            }
+            .text2{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                letter-spacing: 0.002em;
+                text-transform: capitalize;
+                color: #666666;
+            }
+        }
+    }
+    .ant-modal-content{
+        margin: 0px 25.5px;
+        height: 140px;
+    }
+    .ant-modal-body{
+        padding: unset;
+    }
+    .modalBlock{
+        .question{
+            padding-top: 27px;
+        }
+        .buttonsBlock{
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .ant-modal-content{
+        margin: 0px 15px;
+    }
+} 
+
+@media screen and (max-width: 320px){
+    .ant-modal-content{
+        margin: unset;
+    }
+}
+
+

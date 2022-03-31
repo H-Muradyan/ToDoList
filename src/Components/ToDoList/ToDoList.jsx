@@ -1,20 +1,22 @@
 import React from 'react'
 import "antd/dist/antd.css";
 import './ToDoList.css'
-import { Checkbox } from 'antd';
+import { Checkbox, Modal} from 'antd';
 
-const photo = require('../../Icon/Vector.png');
+const photo = require('../../assets/Icon/delete.png');
 
-function ToDoList({toDoDatas, handleDelete, onChange}) {
 
+
+function ToDoList({toDoDatas, handleDelete, onChange, showModal, handleCancel, isModalVisible}) {
 
   return (
     <div className='listData'>
         {toDoDatas.length > 0
-            ? toDoDatas.map((data) => {
+            ? toDoDatas.map((data,i) => {
                 return (
-                    <>
-                        <div className='lists' key={data.id}>   
+                    <div key={i}>
+                        <div className='lists' key={data.id}> 
+                   {     console.log(data.id)  }
                             <Checkbox checked={data.isCompleted} className='box' onChange={() => onChange({
                                 ...data,
                                 isCompleted: !data.isCompleted
@@ -26,10 +28,19 @@ function ToDoList({toDoDatas, handleDelete, onChange}) {
                             {data.isCompleted &&
                             <div className='completedTask'>{data.text}</div>
                             }
-                            <img className='delete' src={photo} alt='delete-icon' onClick={() => handleDelete(data.id)}/>
+                            <img className='delete' src={photo} alt='delete-icon' onClick={() => showModal(data.id)}/>
+                            <Modal footer={null} visible={isModalVisible} onCancel={handleCancel} centered={true}>
+                                <div className='modalBlock'>
+                                    <p className='question'>Are you sure you want to delete?</p>
+                                    <div className='buttonsBlock'>
+                                    <p className='yesButton' onClick={handleDelete}>Yes</p>
+                                    <p className='noButton' onClick={handleCancel}>No</p>
+                                </div>
+                                </div>
+                            </Modal>   
                         </div>
                         <div className='line'></div>
-                    </>
+                    </div>
                 )
             })
             : <div className='texts'>

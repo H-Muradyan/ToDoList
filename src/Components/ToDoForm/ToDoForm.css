@@ -39,6 +39,7 @@
 }
 
 .generelHome .inputForm {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,5 +137,136 @@
   line-height: 28px;
   text-transform: capitalize;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1920px) {
+  .generelHome .inputForm .textField {
+    width: 1440px;
+  }
+  .generelHome .inputForm .textField .buttonFeild {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .generelHome .inputForm .textField {
+    width: 960px;
+  }
+  .generelHome .inputForm .textField .buttonFeild {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .generelHome .inputForm .textField {
+    width: 890px;
+  }
+  .generelHome .inputForm .textField .buttonFeild {
+    width: 94px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .generelHome .inputForm .textField {
+    width: 810px;
+  }
+  .generelHome .inputForm .textField .buttonFeild {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .generelHome .inputForm .textField {
+    width: 550px;
+  }
+  .generelHome .inputForm .textField .buttonFeild {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .generelHome .inputForm .textField {
+    width: 490px;
+  }
+  .generelHome .inputForm .textField .buttonFeild {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .App {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .generelHome .title {
+    font-size: 16px;
+  }
+  .generelHome .hide {
+    margin-top: 88px;
+  }
+  .generelHome .hide .hideText {
+    font-size: 16px;
+  }
+  .generelHome .inputForm {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .generelHome .inputForm .textField {
+    width: 377px;
+  }
+  .generelHome .inputForm .buttonFeild {
+    margin-top: 20px;
+  }
+  .generelHome .inputForm .errorMessage p {
+    margin-bottom: unset;
+    max-height: 0px;
+  }
+  .listData .lists .task {
+    font-size: 16px;
+    line-height: 227px;
+  }
+  .listData .texts .text1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: #ACACAC;
+  }
+  .listData .texts .text2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.002em;
+    text-transform: capitalize;
+    color: #666666;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .generelHome .inputForm .textField {
+    width: 335px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .generelHome .inputForm .textField {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .generelHome .inputForm .textField {
+    width: 280px;
+  }
 }
 /*# sourceMappingURL=ToDoForm.css.map */
