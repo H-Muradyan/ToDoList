@@ -15,6 +15,7 @@ function ToDoForm({addTask, hideChange}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        taskText.length > 0 &&
         addTask(taskText);
         setTaskText(''); 
     }

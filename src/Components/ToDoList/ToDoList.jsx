@@ -16,7 +16,6 @@ function ToDoList({toDoDatas, handleDelete, onChange, showModal, handleCancel, i
                 return (
                     <div key={i}>
                         <div className='lists' key={data.id}> 
-                   {     console.log(data.id)  }
                             <Checkbox checked={data.isCompleted} className='box' onChange={() => onChange({
                                 ...data,
                                 isCompleted: !data.isCompleted
